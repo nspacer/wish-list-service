@@ -1,0 +1,16 @@
+curl -H "Content-Type: application/json" \
+  -X POST \
+  -i \
+  -d '{"name": "Test Item without auth", "description": "Test Description", "url": "https://www.amazon.com"}' \
+  https://hqzx366v77.execute-api.eu-central-1.amazonaws.com/default/wish-list-service
+
+curl -H "Content-Type: application/json" \
+  -H "authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlpsbWlUcEZaaXBOekZRZXlBNmdySCJ9.eyJpc3MiOiJodHRwczovL2Rldi03amI4MmpnbnBxbXMwZnR2LnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJHeE9MOWJxd1FIcDBpMGd1Vm1mazQ2dzViQUxSd2RuU0BjbGllbnRzIiwiYXVkIjoiaHR0cHM6Ly9hdXRoMC1qd3QtYXV0aG9yaXplciIsImlhdCI6MTczMjA5NTIzNywiZXhwIjoxNzMyMTgxNjM3LCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMiLCJhenAiOiJHeE9MOWJxd1FIcDBpMGd1Vm1mazQ2dzViQUxSd2RuUyJ9.a3NZmkMct8SjNkJxuIoy9QkneOGddKknAGD-m_tj0zy_svkb1cSH0EDDiiVCvT7whvQsiMhsDxdZiACBnw4af-Qxe0YR6v7nqlzKW7KN_pwetfDMIEqHTGQgWbVOdzO0-cjaARToR56jHpH74w3Vl6f8O8D-FvmYWVaY0Kk4HQ8dQxvJpae6SZd4LN2-dTvB7IGLxxV-bvbBWDa9o-LpA6bp3ntL9w_9TBEJ6Ngx-TdMMGYXInPN6XkJcvqHvrWs2UgKg9IpJeV7GB4KEZXSezDkntlvNZOvfEH2EUHvFg-3CL5a9h3cuMNJupJHwuIOV_sjc0zY5dmgtTvSePz4PA" \
+  -X POST \
+  -i \
+  -d '{"name": "Test Item", "description": "Test Description", "url": "https://www.google.com"}' \
+  https://hqzx366v77.execute-api.eu-central-1.amazonaws.com/default/wish-list-service
+  
+  
+  
+  curl -i https://hqzx366v77.execute-api.eu-central-1.amazonaws.com/default/wish-list-service
