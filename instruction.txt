@@ -5,7 +5,7 @@ curl -H "Content-Type: application/json" \
   https://hqzx366v77.execute-api.eu-central-1.amazonaws.com/default/wish-list-service
 
 curl -H "Content-Type: application/json" \
-  -H "authorization: Bearer <toen goes here>" \
+  -H "authorization: Bearer <token goes here>" \
   -X POST \
   -i \
   -d '{"name": "Test Item", "description": "Test Description", "url": "https://www.google.com"}' \
